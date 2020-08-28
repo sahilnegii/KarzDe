@@ -1,0 +1,66 @@
+<div class="main">
+      
+    <div class="card">	
+        <h2 style="text-align: center;"> Welcome User!! Please Login.. :) </h2>
+     
+            <form #loginForm='ngForm' (ngSubmit)="loginACustomer(loginForm)">
+                <div class="container">
+                    <label for="uname"><b>UserId </b></label>
+                    <input type="number" [(ngModel)]="login.customerId" placeholder="Enter userId" name="email">
+                    
+                    <label for="psw"><b>Password</b></label>
+                    <input type="text" [(ngModel)]="login.customerPassword" placeholder="Enter Password" name="pass">
+                    
+                 <button type="submit">Login </button>
+                 <a [routerLink]="['/login-admin']">Are You Admin?</a>
+               
+                </div>
+                
+                
+            </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--div class="main">
+      
+    <div class="card">	
+        <h2 style="text-align: center;"> Hello, Welcome Back!! Nice to see you.. :) </h2>
+     
+            <form #loginForm='ngForm' (ngSubmit)="loginACustomer(loginForm)"action="login">
+                <div class="container">
+
+                    Email* <input type="text" name= "email" [(ngModel)]="login.email" required><br>
+                    Password* <input type="password" name="password" [(ngModel)]="login.password" required> <br>
+                    
+                    <button type="submit"> Login </button>
+                    
+                </div>
+                
+            </form>
+            
+            <h1>{{status?.message}}</h1>
+            <h1>{{status?.name}}</h1>
+            <h1>{{status?.customerId}}</h1>
+    
+    </div>
+</div>
+-->

@@ -1,0 +1,29 @@
+.container {
+    width: 450px;
+    margin: auto;
+    z-index: -1;	
+}
+
+button {
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: blueviolet;
+    border-radius: 6px;
+    outline: none;
+  }
+  
+button:hover {
+      opacity: 0.8;
+}
+
+table, th, td {
+    border: 2px solid black;
+    text-align: center;
+  }
+
+table.center {
+    margin-left: auto; 
+    margin-right: auto;
+  }

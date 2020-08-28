@@ -1,0 +1,59 @@
+<div class="row">
+    <div class="main">
+
+    <div class="card">	
+        <h2 style="text-align: center;"> Namaste Swagat Hai Apka "KarzDe" Home Loan Mein </h2>
+        <h2 style="text-align: center;"> Please do register!! </h2>
+     
+        <form #registerForm='ngForm' (ngSubmit)="registerACustomer(registerForm)" >
+            <div class="container">
+
+            
+                <div>
+                    <label><h3>First Name*</h3></label>
+                    <input type="text"  [(ngModel)]="customer.customerFirstName" placeholder="Enter first name" name="firstname">
+        
+                </div>
+
+                <div>
+                    <label><h3>Last Name*</h3></label>
+                    <input type="text" [(ngModel)]="customer.customerLastName" placeholder="Enter last name" name="lastname">
+                </div>
+
+                <div>
+                    <label><h3>Email*</h3></label>
+                    <input type="text" [(ngModel)]="customer.customerEmail" placeholder="Enter email id" name="email">
+                
+                </div>
+                
+                <div>
+                    <label><h3>Password*</h3></label>
+                    <input type="password" [(ngModel)]="customer.customerPassword" placeholder="Enter password" name="password">
+                    
+                </div>
+
+
+                <div>
+                    <label><h3>Mobile number*</h3></label>
+                    <input type="text" [(ngModel)]="customer.customerMobileNumber" placeholder="Enter mobile number" name="mobilenumber">
+                    
+                </div>
+
+
+                <div>
+                    <label><h3>City*</h3></label>
+                    <input type="text" [(ngModel)]="customer.customerCity" placeholder="Enter city" name="city">
+                
+                </div>
+
+
+                <div >
+                    <label><h3>Employment Type*</h3></label>
+                    <input type="text" [(ngModel)]="customer.customerEmploymentType" placeholder="Enter employment type" name="employmenttype">
+                    
+                </div>
+             
+             <button type="submit"> Register </button>
+         </div>
+     </form>
+</div>

@@ -1,0 +1,51 @@
+/*
+register
+*/
+.card {
+	background-color: lavender;
+	padding: 20px;
+	margin-top: 8px;
+}
+
+.main {
+  width: 90%;
+  margin: auto;	
+}
+
+input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display:inline-block;
+	border: 1px solid;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: blueviolet;
+    color: black;
+    font-size: 20px;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border : none;
+	width:100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+.container {
+	padding: 16px;
+	width: 350px;
+	margin: auto;
+}
+
+.errcolor{
+	color: red;
+}
+
+.rad{
+	width: 350px;	
+}
+

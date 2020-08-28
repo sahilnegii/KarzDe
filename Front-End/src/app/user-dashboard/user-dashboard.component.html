@@ -1,0 +1,61 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    table, th, td {
+  border: 2px solid black;
+  text-align: center;
+}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+</style>
+
+    <h2 style="text-align: center; color: black;">Welcome {{name}}</h2>
+        <button (click)="onlogout()">Logout</button>
+        <br>
+        <br>
+        <br>
+        <div>
+        <table class="table table-striped">
+            <tr>
+                <th>Customer ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>  
+                <th>Email</th>
+                <th>Date Of Birth</th>
+                <th>City</th>
+                <th>Mobile number</th>
+                <th>Property Location</th>
+                <th>Tenure(in years)</th>
+                <th>Loan Amount</th>
+                <th> </th>
+            </tr>
+
+
+            <tr>
+              <td>{{details.customer.customerId}}</td>
+              <td>{{details.customer.customerFirstName}}</td>
+              <td>{{details.customer.customerLastName}}</td>
+              <td>{{details.customer.customerEmail}}</td>
+              <td>{{details.customer.customerdateOfBirth}}</td>
+              <td>{{details.customer.customerCity}}</td>
+              <td>{{details.customer.customerMobileNumber}}</td>
+              <td>{{details.customer.customerEmploymentType}}</td>
+              <td>{{details.propertyLocation}}</td>
+              <td>{{details.tenure}}</td>
+              <td>{{details.loanAmount}}</td>
+            </tr>
+            
+          </table>
+          <br>
+          <button  style="background-color: rgb(35, 204, 148);" routerLink='/application-apply'>Apply For Home Loan</button>
+          <button style="background-color: rgb(35, 204, 148);" routerLink='/loan-tracker'>Track loan status</button>
+          
+
+                    

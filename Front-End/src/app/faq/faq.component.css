@@ -1,0 +1,109 @@
+.accordion label{
+	display: block;
+	cursor: pointer;
+	padding: 10px;
+	background-color: #283042;
+	color: white;
+	border-bottom: 2px solid #FFF;
+}
+
+.accordion h4{
+	padding: 10px;
+	visibility: hidden;
+	line-height: 30px;
+	display: none;
+	text-align: left;
+	font-size: 18px;
+}
+
+#accordion1:checked ~ .single-text{
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	margin-bottom: 0;
+	/*background-color: #283042;
+	color: white;*/
+	border-bottom: 2px solid #FFF;
+	background-color: #212838;
+	color: rgba(255,255,255,.6);
+}
+
+#accordion1{
+	display: none;
+	position: relative;
+}
+
+#accordion2:checked ~ .single-text{
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	margin-bottom: 0;
+	background-color: #212838;
+	color: rgba(255,255,255,.6);
+	border-bottom: 2px solid #FFF;		
+}
+
+#accordion2{
+	display: none;
+	position: relative;
+}
+
+#accordion3:checked ~ .single-text{
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	margin-bottom: 0;
+	background-color: #212838;
+	color: rgba(255,255,255,.6);
+	border-bottom: 2px solid #FFF;		
+}
+
+#accordion3{
+	display: none;
+	position: relative;
+}
+
+#accordion4:checked ~ .single-text{
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	margin-bottom: 0;
+	background-color: #212838;
+	color: rgba(255,255,255,.6);	
+	border-bottom: 2px solid #FFF;	
+}
+
+#accordion4{
+	display: none;
+	position: relative;
+}
+
+#accordion5:checked ~ .single-text{
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	margin-bottom: 0;
+	background-color: #212838;
+	color: rgba(255,255,255,.6);
+	border-bottom: 2px solid #FFF;		
+}
+
+#accordion5{
+	display: none;
+	position: relative;
+}
+
+#accordion6:checked ~ .single-text{
+	display: block;
+	opacity: 1;
+	visibility: visible;
+	margin-bottom: 0;
+	background-color: #212838;
+	color: rgba(255,255,255,.6);
+	border-bottom: 2px solid #FFF;		
+}
+
+#accordion6{
+	display: none;
+	position: relative;
+}

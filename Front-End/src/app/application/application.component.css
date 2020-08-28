@@ -1,0 +1,10 @@
+.container {
+	padding: 16px;
+	width: 350px;
+	margin: auto;
+}
+.team-text {
+    text-align: center;
+    font-family: 'Impact', Charcoal, sans-serif;
+    font-size: 30px;
+}

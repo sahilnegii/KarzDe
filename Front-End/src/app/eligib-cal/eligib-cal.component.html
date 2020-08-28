@@ -1,0 +1,20 @@
+<a class="ltabs" [routerLink]="['/cal/eligib']" > <h2> Eligibility Calculator </h2></a>
+<a class="rtabs" [routerLink]="['/cal/emi']" > <h2> EMI Calculator </h2></a>
+
+<p><b>Calculate housing loan eligibility</b></p>
+<p>Home loans are easily accessible financing options in India when it comes to property buying. </p>
+<p>KarzDe brings easy-to-meet eligibility criteria, making the Home Loan more accessible.</p>
+<div class="main">
+
+    <div class="card">	
+
+        <form>
+            <div class="container">
+                <label><b>Monthly Income</b></label>
+                <input placeholder="Enter Montly Income" (keyup)="handleMonthlyIncomeEvent($event)"/>
+                
+                <button (click)="cal()" type="submit">Calculate</button>
+            </div>
+                <h3 *ngIf="flag"> You may be able to avail home loan up to ₹{{eligibility}} with KarzDe for the mentioned period. T&C apply.      </h3>
+        </form>
+     </div>

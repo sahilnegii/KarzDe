@@ -1,0 +1,33 @@
+<a class="ltabs" [routerLink]="['/cal/eligib']" > <h2> Eligibility Calculator </h2></a>
+<a class="rtabs" [routerLink]="['/cal/emi']" > <h2> EMI Calculator </h2></a>
+      
+
+<p><b>Home Loan Calculator – Calculate Housing Loan EMI</b></p>
+
+<p>EMI calculator for home loan is simple and easy to use. <br>
+   All you have to do is enter the values for ‘Loan amount’, ‘Tenure’ and ‘Rate of Interest’ and <br> you will automatically get accurate results for the Home Loan EMI (per month)
+</p>
+
+<div class="main">
+
+    <div class="card">	
+
+        <form>
+            <div class="container">
+                <label><b>Loan</b></label>
+                <input placeholder="Enter Loan" (keyup)="handleLoanEvent($event)"/>
+                
+                <label><b>Tenure</b></label>
+                <input  placeholder="Enter Tenure in years" (keyup)="handleTenureEvent($event)">
+
+                <label><b>ROI</b></label>
+                <input  placeholder="Enter Tenure in years" (keyup)="handleRoiEvent($event)">
+
+                <button (click)="cal()" type="submit">Calculate</button>
+            </div>
+                <h3 *ngIf="flag">Your EMI will be ₹{{emi1}} per month  </h3>
+                <h3 *ngIf="flag">Total Interest Payable ₹{{interest}}     </h3> 
+                <h3 *ngIf="flag">Total Payment (Principle + Interest): ₹{{totalAmt}}     </h3> 
+            
+        </form>
+     </div>
